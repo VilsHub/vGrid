@@ -1,5 +1,5 @@
 /*
- * vUX JavaScript framework v1.0.0
+ * vGrid JavaScript framework v1.0.0
  * https://framework.vilshub.com/
  *
  *
@@ -15,19 +15,6 @@
 function roundToDec(value, decimals) {
 	return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 };
-function percentageToAngle(percentage, start){
-	var angle = (percentage/100)*(2*Math.PI);
-	if(start == 12){
-		return angle - (0.5*Math.PI);
-	}else if(start == 3){
-		return angle;
-	}else{
-		return angle;
-	}
-};
-function getRandomInt(min, max){
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-};
 function validateNumber(number){
 	if (typeof number != "number"){
 		throw new TypeError("Please provide a real number");
@@ -42,100 +29,6 @@ function validateString(string){
 		return true;
 	}
 };
-function validateArray(array, totalMember, type){
-	if (Array.isArray(array)){
-		if(totalMember != -1){
-			if(array.length == totalMember){
-					for (var x = 0; x < totalMember; x++){
-						if(type == "string"){
-							if (validateString(array[x])){
-								if (x == totalMember-1){
-									return true;
-								}
-							}else{
-								throw new TypeError("Invlaid datatype as member");
-							}
-						}else if(type == "number"){
-							if (validateNumber(array[x])){
-								if (x == totalMember-1){
-									return true;
-								}
-							}else{
-								throw new TypeError("Invlaid datatype as member");
-							}
-						}
-					}
-			}else{
-				throw new Error("Incomplete member error: "+ totaMember +" memebers needed");
-			}
-		}else if (totalMember == -1){
-			var len = array.length;
-			for (var x = 0; x < len; x++){
-				if(type == "string"){
-					if (validateString(array[x])){
-						if (x == len-1){
-							return true;
-						}
-					}else{
-						throw new TypeError("Invlaid datatype as member");
-					}
-				}else if(type == "number"){
-					if (validateNumber(array[x])){
-						if (x == len-1){
-							return true;
-						}
-					}else{
-						throw new TypeError("Invlaid datatype as member");
-					}
-				}
-			}
-		}
-	}else{
-		throw new TypeError("Please provide an array");
-	}
-};
-function validateBoolean(boolean){
-	if (typeof boolean != "boolean"){
-		throw new TypeError("Please provide a boolean to specify direction");
-	}else{
-		return true;
-	}
-};
-function validateObjectMember(object, propery){
-	var ObjArr = Object.keys(object);
-	for (var x = 0; x < ObjArr.length; x++){
-		if(ObjArr[x] == propery){
-			return true;
-		}else{
-			if (x == ObjArr.length-1){
-					var AllProperties =  ObjArr.toString();
-					var rplc = AllProperties.replace(/,/g, ", ");
-					throw new TypeError("Invlaid property specied, it should any of the follwing : " + rplc);
-			}
-		}
-	}
-}
-function validateElement (element){
-	if (element instanceof Element){
-		return true;
-	}else{
-		throw new TypeError("Invalid HTML Element : HTML Element must be provide");
-	}
-}
-function validateFunction (fn){
-	if (typeof fn == "function"){
-		return true;
-	}else{
-		throw new TypeError("Invalid assigned data : Please provide a function need ");
-	}
-}
-function validateHTMLObject(HTMLCollection){
-	if(Object.getPrototypeOf(HTMLCollection).constructor.name == "NodeList"){
-		return true;
-	}else{
-			throw new TypeError("Invalid HTML Collection : HTML collection must be provide");
-	}
-}
 function getStyles(element, property){
 	if(window.getComputedStyle){
 		var styleHandler = getComputedStyle(element, null);
