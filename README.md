@@ -35,7 +35,7 @@ The first release ( **v1.0.0** ), has the following features:
 
 ![Grid with tool](https://imgur.com/9It6nXZ.png)
 
-**Download**
+## Download
 
 Version | Link1 | Link2
 --- | --- | ---
