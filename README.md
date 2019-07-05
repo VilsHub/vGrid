@@ -32,7 +32,7 @@ The first release ( **v1.0.0** ), has the following features:
 
 **OUTPUT**
 
-![Grid with tool](https://imgur.com/9It6nXZ)
+![Grid with tool](https://imgur.com/9It6nXZ.png)
 
 ## Documentation
 The documentation for this framework will be provided soon, you may **Watch**, this repo for further updates.
