@@ -35,5 +35,11 @@ The first release ( **v1.0.0** ), has the following features:
 
 ![Grid with tool](https://imgur.com/9It6nXZ.png)
 
+**Download**
+
+Version | Link1 | Link2
+--- | --- | ---
+1.0.0 |[v1.0.0](https://github.com/VilsHub/vGrid/archive/v1.0.0.zip) | [v1.0.0](https://github.com/VilsHub/vGrid/archive/v1.0.0.tar.gz)
+
 ## Documentation
 The documentation for this framework will be provided soon, you may **Watch**, this repo for further updates.
