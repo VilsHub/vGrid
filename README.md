@@ -7,7 +7,7 @@ vGrid is strictly built on JavaScript and has no dependencies, other than a Java
 
 ## Installation
 
-To use vUX, include the script vUX-x.y.z.js where x y z represents the version. Example is shown below:
+To use vGrid, include the script vGrid-x.y.z.js where x y z represents the version. Example is shown below:
 
     <script src="vGrid/vGrid-1.0.0.js"></script>
 
@@ -16,7 +16,7 @@ To use vUX, include the script vUX-x.y.z.js where x y z represents the version. 
 You can rename the JS file if you wish to.
 
 ## Features
-The first release ( ** v1.0.0 ** ), has the following features:
+The first release ( **v1.0.0** ), has the following features:
 - Font size hierarchy tool
 - Base grid height hierarchy tool
 - Unit converter tool
@@ -30,7 +30,7 @@ The first release ( ** v1.0.0 ** ), has the following features:
     baseGrid.initialize();
     baseGrid.ForceONWithGrid();
 
-** OUTPUT **
+**OUTPUT**
 
 ## Documentation
-The documentation for this framework will be provided soon, you may ** Watch **, this repo for further updates.
+The documentation for this framework will be provided soon, you may **Watch**, this repo for further updates.
