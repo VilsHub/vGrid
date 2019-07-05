@@ -11,7 +11,7 @@ To use vGrid, include the script vGrid-x.y.z.js where x y z represents the versi
 
     <script src="vGrid/vGrid-1.0.0.js"></script>
 
-** Note **
+**Note**
 
 You can rename the JS file if you wish to.
 
