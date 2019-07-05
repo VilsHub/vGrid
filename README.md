@@ -7,9 +7,10 @@ vGrid is strictly built on JavaScript and has no dependencies, other than a Java
 
 ## Installation
 
-To use vGrid, include the script vGrid-x.y.z.js where x y z represents the version. Example is shown below:
+To use vGrid, include the script vGrid-x.y.z.js and the style sheet vGrid-x.y.z.css where x y z represents the version. Example is shown below:
 
     <script src="vGrid/vGrid-1.0.0.js"></script>
+    <link rel="stylesheet" href="vGrid-1.0.0.css">
 
 **Note**
 
